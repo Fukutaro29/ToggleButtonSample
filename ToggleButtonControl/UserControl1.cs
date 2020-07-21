@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ToggleButtonControl
 {
-    public partial class ToggleButton: UserControl
+    public partial class ToggleButtonUserForm: UserControl
     {
         public bool IsON { get; set; } = true;
         public Color ONColor { get; set; } = Color.Lime;
@@ -18,7 +18,7 @@ namespace ToggleButtonControl
         public string ONText { get; set; } = "ON";
         public string OFFText { get; set; } = "OFF";
 
-        public ToggleButton()
+        public ToggleButtonUserForm()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace ToggleButtonControl
             {
                 //OFF->ON
                 SwitchButton.Dock = DockStyle.Left;
-                SwitchButton.BackColor = ONColor;
+                SwitchPanel.BackColor = ONColor;
                 ToggleButtonLabel.Text = ONText;
             }
             IsON = !IsON;
