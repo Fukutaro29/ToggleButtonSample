@@ -1,6 +1,6 @@
 ﻿namespace ToggleButtonControl
 {
-    partial class UserControl1
+    partial class ToggleButton
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -38,11 +38,11 @@
             // 
             this.ToggleButtonLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ToggleButtonLabel.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.ToggleButtonLabel.Location = new System.Drawing.Point(126, 0);
+            this.ToggleButtonLabel.Location = new System.Drawing.Point(100, 0);
             this.ToggleButtonLabel.Name = "ToggleButtonLabel";
-            this.ToggleButtonLabel.Size = new System.Drawing.Size(108, 32);
+            this.ToggleButtonLabel.Size = new System.Drawing.Size(78, 26);
             this.ToggleButtonLabel.TabIndex = 0;
-            this.ToggleButtonLabel.Text = "ToggleButton";
+            this.ToggleButtonLabel.Text = "ON";
             this.ToggleButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SwitchPanel
@@ -52,7 +52,7 @@
             this.SwitchPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SwitchPanel.Location = new System.Drawing.Point(0, 0);
             this.SwitchPanel.Name = "SwitchPanel";
-            this.SwitchPanel.Size = new System.Drawing.Size(126, 32);
+            this.SwitchPanel.Size = new System.Drawing.Size(100, 26);
             this.SwitchPanel.TabIndex = 1;
             // 
             // SwitchButton
@@ -63,19 +63,20 @@
             this.SwitchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SwitchButton.Location = new System.Drawing.Point(0, 0);
             this.SwitchButton.Name = "SwitchButton";
-            this.SwitchButton.Size = new System.Drawing.Size(55, 32);
+            this.SwitchButton.Size = new System.Drawing.Size(50, 26);
             this.SwitchButton.TabIndex = 0;
             this.SwitchButton.UseVisualStyleBackColor = false;
+            this.SwitchButton.Click += new System.EventHandler(this.SwitchButton_Click);
             // 
-            // UserControl1
+            // ToggleButton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.ToggleButtonLabel);
             this.Controls.Add(this.SwitchPanel);
-            this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(234, 32);
+            this.Name = "ToggleButton";
+            this.Size = new System.Drawing.Size(178, 26);
             this.SwitchPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
